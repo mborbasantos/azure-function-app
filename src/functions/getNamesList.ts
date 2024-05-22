@@ -5,7 +5,7 @@ export async function getNamesList(request: HttpRequest, context: InvocationCont
 
     const name = request.query.get('name') || await request.text() || 'world';
 
-    return { body: JSON.stringify(['TESTE1', 'TESTE2', 'TESTE3']), headers: {
+    return { body: JSON.stringify(['TESTE1', 'TESTE2', 'TESTE3', 'TESTE4']), headers: {
         'Access-Control-Allow-Credentials': 'true',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET',
